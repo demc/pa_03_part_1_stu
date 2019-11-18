@@ -1,0 +1,5 @@
+~~ Heap Allocator Test 0 ~~
+
+Initializing heap...
+BEGIN: 0x010, END: 0x027, SIZE: 24
+

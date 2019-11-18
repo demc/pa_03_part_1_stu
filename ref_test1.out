@@ -1,0 +1,86 @@
+~~ Heap Allocator Test 1 ~~
+
+Initializing heap...
+BEGIN: 0x010, END: 0x027, SIZE: 24
+
+Block found at 0x010
+block size: 24
+Unable to find block to accommodate 24 (8) bytes.
+Requesting new block of size: 24
+New block starts at 0x028
+block size: 24
+Unable to find block to accommodate 24 (8) bytes.
+Requesting new block of size: 24
+New block starts at 0x040
+block size: 24
+Unable to find block to accommodate 24 (8) bytes.
+Requesting new block of size: 24
+New block starts at 0x058
+block size: 24
+Unable to find block to accommodate 24 (8) bytes.
+Requesting new block of size: 24
+New block starts at 0x070
+block size: 24
+Unable to find block to accommodate 24 (8) bytes.
+Requesting new block of size: 24
+New block starts at 0x088
+block size: 24
+Unable to find block to accommodate 24 (8) bytes.
+Requesting new block of size: 24
+New block starts at 0x0a0
+block size: 24
+Unable to find block to accommodate 24 (8) bytes.
+Requesting new block of size: 24
+New block starts at 0x0b8
+block size: 24
+Unable to find block to accommodate 24 (8) bytes.
+Requesting new block of size: 24
+New block starts at 0x0d0
+block size: 24
+Unable to find block to accommodate 24 (8) bytes.
+Requesting new block of size: 24
+New block starts at 0x0e8
+block size: 24
+- Heap State - size: 240 bytes --------------------
+---------------------------------------------------
+0x010	 size: 24  data size: 8  alloc: 1
+	 hdr: 0x19 ftr: 0x19
+	 data: test 0 
+---------------------------------------------------
+0x028	 size: 24  data size: 8  alloc: 1
+	 hdr: 0x19 ftr: 0x19
+	 data: test 1 
+---------------------------------------------------
+0x040	 size: 24  data size: 8  alloc: 1
+	 hdr: 0x19 ftr: 0x19
+	 data: test 2 
+---------------------------------------------------
+0x058	 size: 24  data size: 8  alloc: 1
+	 hdr: 0x19 ftr: 0x19
+	 data: test 3 
+---------------------------------------------------
+0x070	 size: 24  data size: 8  alloc: 1
+	 hdr: 0x19 ftr: 0x19
+	 data: test 4 
+---------------------------------------------------
+0x088	 size: 24  data size: 8  alloc: 1
+	 hdr: 0x19 ftr: 0x19
+	 data: test 5 
+---------------------------------------------------
+0x0a0	 size: 24  data size: 8  alloc: 1
+	 hdr: 0x19 ftr: 0x19
+	 data: test 6 
+---------------------------------------------------
+0x0b8	 size: 24  data size: 8  alloc: 1
+	 hdr: 0x19 ftr: 0x19
+	 data: test 7 
+---------------------------------------------------
+0x0d0	 size: 24  data size: 8  alloc: 1
+	 hdr: 0x19 ftr: 0x19
+	 data: test 8 
+---------------------------------------------------
+0x0e8	 size: 24  data size: 8  alloc: 1
+	 hdr: 0x19 ftr: 0x19
+	 data: test 9 
+---------------------------------------------------
+

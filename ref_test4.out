@@ -1,0 +1,65 @@
+~~ Heap Allocator Test 4 ~~
+
+Initializing heap...
+BEGIN: 0x010, END: 0x027, SIZE: 24
+
+Block found at 0x010
+block size: 24
+Unable to find block to accommodate 24 (8) bytes.
+Requesting new block of size: 24
+New block starts at 0x028
+block size: 24
+Unable to find block to accommodate 24 (8) bytes.
+Requesting new block of size: 24
+New block starts at 0x040
+block size: 24
+Unable to find block to accommodate 24 (8) bytes.
+Requesting new block of size: 24
+New block starts at 0x058
+block size: 24
+Unable to find block to accommodate 24 (8) bytes.
+Requesting new block of size: 24
+New block starts at 0x070
+block size: 24
+- Heap State - size: 120 bytes --------------------
+---------------------------------------------------
+0x010	 size: 24  data size: 8  alloc: 1
+	 hdr: 0x19 ftr: 0x19
+	 data: first 
+---------------------------------------------------
+0x028	 size: 24  data size: 8  alloc: 1
+	 hdr: 0x19 ftr: 0x19
+	 data: second 
+---------------------------------------------------
+0x040	 size: 24  data size: 8  alloc: 1
+	 hdr: 0x19 ftr: 0x19
+	 data: third 
+---------------------------------------------------
+0x058	 size: 24  data size: 8  alloc: 1
+	 hdr: 0x19 ftr: 0x19
+	 data: fourth 
+---------------------------------------------------
+0x070	 size: 24  data size: 8  alloc: 1
+	 hdr: 0x19 ftr: 0x19
+	 data: fifth 
+---------------------------------------------------
+
+- Heap State - size: 120 bytes --------------------
+---------------------------------------------------
+0x010	 size: 24  data size: 8  alloc: 1
+	 hdr: 0x19 ftr: 0x19
+	 data: first 
+---------------------------------------------------
+0x028	 size: 24  data size: 8  alloc: 1
+	 hdr: 0x19 ftr: 0x19
+	 data: second 
+---------------------------------------------------
+0x040	 size: 24  data size: 8  alloc: 1
+	 hdr: 0x19 ftr: 0x19
+	 data: third 
+---------------------------------------------------
+0x058	 size: 48  data size: 32  alloc: 0
+	 hdr: 0x30 ftr: 0x30
+	 data: fourth (junk)
+---------------------------------------------------
+

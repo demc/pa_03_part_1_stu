@@ -1,0 +1,72 @@
+~~ Heap Allocator Test 3 ~~
+
+Initializing heap...
+BEGIN: 0x010, END: 0x027, SIZE: 24
+
+Block found at 0x010
+block size: 24
+Unable to find block to accommodate 80 (64) bytes.
+Requesting new block of size: 80
+New block starts at 0x028
+block size: 80
+Unable to find block to accommodate 24 (8) bytes.
+Requesting new block of size: 24
+New block starts at 0x078
+block size: 24
+- Heap State - size: 128 bytes --------------------
+---------------------------------------------------
+0x010	 size: 24  data size: 8  alloc: 1
+	 hdr: 0x19 ftr: 0x19
+	 data: first 
+---------------------------------------------------
+0x028	 size: 80  data size: 64  alloc: 1
+	 hdr: 0x51 ftr: 0x51
+	 data: second 
+---------------------------------------------------
+0x078	 size: 24  data size: 8  alloc: 1
+	 hdr: 0x19 ftr: 0x19
+	 data: third 
+---------------------------------------------------
+
+Block found at 0x028
+block size: 24
+- Heap State - size: 128 bytes --------------------
+---------------------------------------------------
+0x010	 size: 24  data size: 8  alloc: 1
+	 hdr: 0x19 ftr: 0x19
+	 data: first 
+---------------------------------------------------
+0x028	 size: 24  data size: 8  alloc: 1
+	 hdr: 0x19 ftr: 0x19
+	 data: SPLIT! 
+---------------------------------------------------
+0x040	 size: 56  data size: 40  alloc: 0
+	 hdr: 0x38 ftr: 0x38
+	 data:  (junk)
+---------------------------------------------------
+0x078	 size: 24  data size: 8  alloc: 1
+	 hdr: 0x19 ftr: 0x19
+	 data: third 
+---------------------------------------------------
+
+Block found at 0x040
+block size: 56
+- Heap State - size: 128 bytes --------------------
+---------------------------------------------------
+0x010	 size: 24  data size: 8  alloc: 1
+	 hdr: 0x19 ftr: 0x19
+	 data: first 
+---------------------------------------------------
+0x028	 size: 24  data size: 8  alloc: 1
+	 hdr: 0x19 ftr: 0x19
+	 data: SPLIT! 
+---------------------------------------------------
+0x040	 size: 56  data size: 40  alloc: 1
+	 hdr: 0x39 ftr: 0x39
+	 data: THIS SHOULD FIT PERFECTLY! 
+---------------------------------------------------
+0x078	 size: 24  data size: 8  alloc: 1
+	 hdr: 0x19 ftr: 0x19
+	 data: third 
+---------------------------------------------------
+

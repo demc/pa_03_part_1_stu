@@ -1,0 +1,136 @@
+~~ Heap Allocator Test 6 ~~
+
+Initializing heap...
+BEGIN: 0x010, END: 0x027, SIZE: 24
+
+Block found at 0x010
+block size: 24
+Unable to find block to accommodate 32 (10) bytes.
+Requesting new block of size: 32
+New block starts at 0x028
+block size: 32
+Unable to find block to accommodate 40 (20) bytes.
+Requesting new block of size: 40
+New block starts at 0x048
+block size: 40
+Unable to find block to accommodate 56 (37) bytes.
+Requesting new block of size: 56
+New block starts at 0x070
+block size: 56
+Unable to find block to accommodate 32 (12) bytes.
+Requesting new block of size: 32
+New block starts at 0x0a8
+block size: 32
+Unable to find block to accommodate 24 (8) bytes.
+Requesting new block of size: 24
+New block starts at 0x0c8
+block size: 24
+Unable to find block to accommodate 48 (27) bytes.
+Requesting new block of size: 48
+New block starts at 0x0e0
+block size: 48
+- Heap State - size: 256 bytes --------------------
+---------------------------------------------------
+0x010	 size: 24  data size: 8  alloc: 1
+	 hdr: 0x19 ftr: 0x19
+	 data: first 
+---------------------------------------------------
+0x028	 size: 32  data size: 16  alloc: 1
+	 hdr: 0x21 ftr: 0x21
+	 data: second 
+---------------------------------------------------
+0x048	 size: 40  data size: 24  alloc: 1
+	 hdr: 0x29 ftr: 0x29
+	 data: third 
+---------------------------------------------------
+0x070	 size: 56  data size: 40  alloc: 1
+	 hdr: 0x39 ftr: 0x39
+	 data: fourth 
+---------------------------------------------------
+0x0a8	 size: 32  data size: 16  alloc: 1
+	 hdr: 0x21 ftr: 0x21
+	 data: fifth 
+---------------------------------------------------
+0x0c8	 size: 24  data size: 8  alloc: 1
+	 hdr: 0x19 ftr: 0x19
+	 data: sixth 
+---------------------------------------------------
+0x0e0	 size: 48  data size: 32  alloc: 1
+	 hdr: 0x31 ftr: 0x31
+	 data: seventh 
+---------------------------------------------------
+
+- Heap State - size: 256 bytes --------------------
+---------------------------------------------------
+0x010	 size: 96  data size: 80  alloc: 0
+	 hdr: 0x60 ftr: 0x60
+	 data: first (junk)
+---------------------------------------------------
+0x070	 size: 160  data size: 144  alloc: 0
+	 hdr: 0xffffffa0 ftr: 0xffffffa0
+	 data: fourth (junk)
+---------------------------------------------------
+
+Block found at 0x010
+block size: 32
+- Heap State - size: 256 bytes --------------------
+---------------------------------------------------
+0x010	 size: 32  data size: 16  alloc: 1
+	 hdr: 0x21 ftr: 0x21
+	 data: split 1 
+---------------------------------------------------
+0x030	 size: 64  data size: 48  alloc: 0
+	 hdr: 0x40 ftr: 0x40
+	 data:  (junk)
+---------------------------------------------------
+0x070	 size: 160  data size: 144  alloc: 0
+	 hdr: 0xffffffa0 ftr: 0xffffffa0
+	 data: fourth (junk)
+---------------------------------------------------
+
+Block found at 0x030
+block size: 40
+- Heap State - size: 256 bytes --------------------
+---------------------------------------------------
+0x010	 size: 32  data size: 16  alloc: 1
+	 hdr: 0x21 ftr: 0x21
+	 data: split 1 
+---------------------------------------------------
+0x030	 size: 40  data size: 24  alloc: 1
+	 hdr: 0x29 ftr: 0x29
+	 data: split 2 
+---------------------------------------------------
+0x058	 size: 24  data size: 8  alloc: 0
+	 hdr: 0x18 ftr: 0x18
+	 data:  (junk)
+---------------------------------------------------
+0x070	 size: 160  data size: 144  alloc: 0
+	 hdr: 0xffffffa0 ftr: 0xffffffa0
+	 data: fourth (junk)
+---------------------------------------------------
+
+Block found at 0x070
+block size: 56
+- Heap State - size: 256 bytes --------------------
+---------------------------------------------------
+0x010	 size: 32  data size: 16  alloc: 1
+	 hdr: 0x21 ftr: 0x21
+	 data: split 1 
+---------------------------------------------------
+0x030	 size: 40  data size: 24  alloc: 1
+	 hdr: 0x29 ftr: 0x29
+	 data: split 2 
+---------------------------------------------------
+0x058	 size: 24  data size: 8  alloc: 0
+	 hdr: 0x18 ftr: 0x18
+	 data:  (junk)
+---------------------------------------------------
+0x070	 size: 56  data size: 40  alloc: 1
+	 hdr: 0x39 ftr: 0x39
+	 data: split 3 
+---------------------------------------------------
+0x0a8	 size: 104  data size: 88  alloc: 0
+	 hdr: 0x68 ftr: 0x68
+	 data: fifth (junk)
+---------------------------------------------------
+

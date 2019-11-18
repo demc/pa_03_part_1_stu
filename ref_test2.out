@@ -1,0 +1,45 @@
+~~ Heap Allocator Test 2 ~~
+
+Initializing heap...
+BEGIN: 0x010, END: 0x027, SIZE: 24
+
+Unable to find block to accommodate 32 (11) bytes.
+Requesting new block of size: 32
+New block starts at 0x028
+block size: 32
+Block found at 0x010
+block size: 24
+Unable to find block to accommodate 40 (19) bytes.
+Requesting new block of size: 40
+New block starts at 0x048
+block size: 40
+- Heap State - size: 96 bytes --------------------
+---------------------------------------------------
+0x010	 size: 24  data size: 8  alloc: 1
+	 hdr: 0x19 ftr: 0x19
+	 data: p1 
+---------------------------------------------------
+0x028	 size: 32  data size: 16  alloc: 1
+	 hdr: 0x21 ftr: 0x21
+	 data: p0 
+---------------------------------------------------
+0x048	 size: 40  data size: 24  alloc: 1
+	 hdr: 0x29 ftr: 0x29
+	 data: p2 
+---------------------------------------------------
+
+- Heap State - size: 96 bytes --------------------
+---------------------------------------------------
+0x010	 size: 24  data size: 8  alloc: 0
+	 hdr: 0x18 ftr: 0x18
+	 data: p1 (junk)
+---------------------------------------------------
+0x028	 size: 32  data size: 16  alloc: 1
+	 hdr: 0x21 ftr: 0x21
+	 data: p0 
+---------------------------------------------------
+0x048	 size: 40  data size: 24  alloc: 1
+	 hdr: 0x29 ftr: 0x29
+	 data: p2 
+---------------------------------------------------
+
