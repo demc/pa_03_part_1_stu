@@ -62,13 +62,9 @@ block size: 48
 
 - Heap State - size: 256 bytes --------------------
 ---------------------------------------------------
-0x010	 size: 96  data size: 80  alloc: 0
-	 hdr: 0x60 ftr: 0x60
+0x010	 size: 256  data size: 240  alloc: 0
+	 hdr: 0x0 ftr: 0x0
 	 data: first (junk)
----------------------------------------------------
-0x070	 size: 160  data size: 144  alloc: 0
-	 hdr: 0xffffffa0 ftr: 0xffffffa0
-	 data: fourth (junk)
 ---------------------------------------------------
 
 Block found at 0x010
@@ -79,13 +75,9 @@ block size: 32
 	 hdr: 0x21 ftr: 0x21
 	 data: split 1 
 ---------------------------------------------------
-0x030	 size: 64  data size: 48  alloc: 0
-	 hdr: 0x40 ftr: 0x40
+0x030	 size: 224  data size: 208  alloc: 0
+	 hdr: 0xffffffe0 ftr: 0xffffffe0
 	 data:  (junk)
----------------------------------------------------
-0x070	 size: 160  data size: 144  alloc: 0
-	 hdr: 0xffffffa0 ftr: 0xffffffa0
-	 data: fourth (junk)
 ---------------------------------------------------
 
 Block found at 0x030
@@ -100,16 +92,12 @@ block size: 40
 	 hdr: 0x29 ftr: 0x29
 	 data: split 2 
 ---------------------------------------------------
-0x058	 size: 24  data size: 8  alloc: 0
-	 hdr: 0x18 ftr: 0x18
+0x058	 size: 184  data size: 168  alloc: 0
+	 hdr: 0xffffffb8 ftr: 0xffffffb8
 	 data:  (junk)
 ---------------------------------------------------
-0x070	 size: 160  data size: 144  alloc: 0
-	 hdr: 0xffffffa0 ftr: 0xffffffa0
-	 data: fourth (junk)
----------------------------------------------------
 
-Block found at 0x070
+Block found at 0x058
 block size: 56
 - Heap State - size: 256 bytes --------------------
 ---------------------------------------------------
@@ -121,16 +109,12 @@ block size: 56
 	 hdr: 0x29 ftr: 0x29
 	 data: split 2 
 ---------------------------------------------------
-0x058	 size: 24  data size: 8  alloc: 0
-	 hdr: 0x18 ftr: 0x18
-	 data:  (junk)
----------------------------------------------------
-0x070	 size: 56  data size: 40  alloc: 1
+0x058	 size: 56  data size: 40  alloc: 1
 	 hdr: 0x39 ftr: 0x39
 	 data: split 3 
 ---------------------------------------------------
-0x0a8	 size: 104  data size: 88  alloc: 0
-	 hdr: 0x68 ftr: 0x68
-	 data: fifth (junk)
+0x090	 size: 128  data size: 112  alloc: 0
+	 hdr: 0xffffff80 ftr: 0xffffff80
+	 data:  (junk)
 ---------------------------------------------------
 
